@@ -1,0 +1,27 @@
+{
+  "version": "2.4.1",
+  "summary": {
+    "title": "Secure E-commerce Web Application",
+    "owner": "Nur Hana Syazwana",
+    "description": "A secure online shopping platform that allows customers to register, browse products, place orders, and make payments. The system also supports admin management of inventory, secure authentication, audit logging, and PayPal payment gateway integration.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Secure E-commerce DFD",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.4.1",
+        "cells": [],
+        "description": "Level 1 Data Flow Diagram for a secure online shopping system. Includes login, checkout, payment gateway integration, and admin features."
+      }
+    ],
+    "diagramTop": 2,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
