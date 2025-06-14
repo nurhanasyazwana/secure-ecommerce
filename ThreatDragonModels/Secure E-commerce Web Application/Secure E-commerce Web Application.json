@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "e03c3719-0546-49d9-90b7-53dd17c65179",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Customer",
@@ -154,6 +154,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -237,7 +238,6 @@
               ]
             },
             "id": "ce67551f-c4be-4abe-bafc-7f9914bdc637",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Admin",
@@ -251,8 +251,8 @@
           },
           {
             "position": {
-              "x": 530,
-              "y": -90
+              "x": 583.75,
+              "y": -200
             },
             "size": {
               "width": 112.5,
@@ -270,6 +270,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -353,7 +354,6 @@
               ]
             },
             "id": "384624ee-4b07-4b48-95ef-6855be720c96",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Payment Gateway",
@@ -386,6 +386,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -469,7 +470,6 @@
               ]
             },
             "id": "f2a006de-3d60-4f25-b33b-1685674dc256",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "P1: \nUser Authentication",
@@ -506,6 +506,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -589,7 +590,6 @@
               ]
             },
             "id": "371d9e3d-09a1-4c61-b4f0-844b51c390a8",
-            "zIndex": 5,
             "data": {
               "type": "tm.Process",
               "name": "P2:\n Browse & \nSearch\n Products",
@@ -625,6 +625,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -708,7 +709,6 @@
               ]
             },
             "id": "75057611-ccc8-4c5f-953e-96bb70e33005",
-            "zIndex": 6,
             "data": {
               "type": "tm.Process",
               "name": "P3: \nCheckout",
@@ -744,6 +744,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 7,
             "ports": {
               "groups": {
                 "top": {
@@ -827,7 +828,6 @@
               ]
             },
             "id": "9f73a999-43a8-42a5-8f3f-bc72080364ef",
-            "zIndex": 7,
             "data": {
               "type": "tm.Process",
               "name": "P4: \nPayment\n Processing",
@@ -844,7 +844,7 @@
           },
           {
             "position": {
-              "x": 265,
+              "x": 255,
               "y": 0
             },
             "size": {
@@ -863,6 +863,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 8,
             "ports": {
               "groups": {
                 "top": {
@@ -946,7 +947,6 @@
               ]
             },
             "id": "70995fd8-ccde-4299-901b-a25c8eba12a8",
-            "zIndex": 8,
             "data": {
               "type": "tm.Process",
               "name": "P5: \nOrder\n Management",
@@ -982,6 +982,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 9,
             "ports": {
               "groups": {
                 "top": {
@@ -1065,7 +1066,6 @@
               ]
             },
             "id": "ce813f4d-4cc5-4d4b-a9c1-0bf9c9f2a2ea",
-            "zIndex": 9,
             "data": {
               "type": "tm.Process",
               "name": "P6: \nAdmin \nManagement",
@@ -1101,6 +1101,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 10,
             "ports": {
               "groups": {
                 "top": {
@@ -1184,7 +1185,6 @@
               ]
             },
             "id": "d31f6652-2c58-4181-bd03-d173a656fdd4",
-            "zIndex": 10,
             "data": {
               "type": "tm.Process",
               "name": "P7: \nAudit \nLogging",
@@ -1661,14 +1661,9 @@
             },
             "target": {
               "cell": "bf22e949-9468-487f-9106-8c32255cdc4b",
-              "port": "1baf12f3-cdf2-4fe7-ba0f-ff066904d267"
+              "port": "d7f3fa16-5538-4031-8f71-0958d4422176"
             },
-            "vertices": [
-              {
-                "x": 460,
-                "y": 120
-              }
-            ]
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -1704,47 +1699,21 @@
             "labels": [
               "Data Flow"
             ],
-            "id": "1c7de921-d162-40ab-97e3-198155081508",
+            "id": "52aefced-1426-445e-87fe-43d06c6805b8",
             "source": {
-              "cell": "70995fd8-ccde-4299-901b-a25c8eba12a8"
+              "x": 375,
+              "y": 55
             },
             "target": {
               "cell": "e3278b67-42e3-4eae-b939-e48e606ab9c7",
-              "port": "b09f29be-00d2-405b-a273-176a431345e2"
+              "port": "11655dc2-0574-4763-b5f6-df4254eaf9ef"
             },
             "vertices": [
               {
-                "x": 560,
-                "y": 20
-              },
-              {
-                "x": 840,
-                "y": -160
-              },
-              {
-                "x": 840,
-                "y": -160
-              },
-              {
-                "x": 870,
-                "y": -480
+                "x": 980,
+                "y": 40
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "position": {
@@ -1770,6 +1739,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1853,7 +1823,6 @@
               ]
             },
             "id": "2c526751-dcb4-48f8-8da1-30d6a681ea1e",
-            "zIndex": 11,
             "data": {
               "type": "tm.Store",
               "name": "User DB",
@@ -1871,8 +1840,8 @@
           },
           {
             "position": {
-              "x": 550,
-              "y": -560
+              "x": 920,
+              "y": -550
             },
             "size": {
               "width": 120,
@@ -1893,6 +1862,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1976,7 +1946,6 @@
               ]
             },
             "id": "e3278b67-42e3-4eae-b939-e48e606ab9c7",
-            "zIndex": 12,
             "data": {
               "type": "tm.Store",
               "name": "Product DB",
@@ -1994,8 +1963,8 @@
           },
           {
             "position": {
-              "x": 576.25,
-              "y": 190
+              "x": 265,
+              "y": 300
             },
             "size": {
               "width": 120,
@@ -2016,6 +1985,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -2099,7 +2069,6 @@
               ]
             },
             "id": "bf22e949-9468-487f-9106-8c32255cdc4b",
-            "zIndex": 13,
             "data": {
               "type": "tm.Store",
               "name": "Order DB",
@@ -2139,6 +2108,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -2222,7 +2192,6 @@
               ]
             },
             "id": "a1172464-adf3-4cb4-8a85-9ac6d2281fb2",
-            "zIndex": 14,
             "data": {
               "type": "tm.Store",
               "name": "Audit Logs",
